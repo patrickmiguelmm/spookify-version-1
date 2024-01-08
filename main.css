@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+/* Reset some default browser styles */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background color and font family */
+body {
+  background: url('images/spooki-bg.jpg');
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Style the header and navigation */
+header {
+  background-color: transparent;
+  color: black;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+header p.logo {
+  font-size: 36px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end; /* Changed to flex-end */
+  padding: 0 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-right: 50rem;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+nav ul li:hover {
+  color: #09ff00;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: #ff9a00;
+  color: black; /* Corrected typo */
+}
+
+/* Style the hero section */
+.hero {
+  text-align: left;
+  padding: 50px 0;
+}
+
+.hero figure img {
+  max-width: 100%;
+  float: right;
+  margin-right: 20px;
+  margin-top: 5rem;
+}
+
+.hero h1 {
+  font-size: 100px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  color: #ff9a00;
+  font-family: "Creepster", cursive;
+}
+
+.hero h2 {
+  font-size: 26px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  color: #fff;
+}
+
+.hero button {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 30px 30px 25px;
+  background-color: #ff9a00;
+  text-shadow 0 0 10px rgba(0, 0, 0 0.3);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: #fff;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-left: 25px;
+  color: #fff;
+}
+
+.hero a {
+  display: inline-block;
+  background-color: #808080;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-left: 25px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.hero a:hover {
+  background-color: #ff9a00;
+}
+
+/* Style the stories section */
+.stories {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  color: #fff;
+}
+
+.stories h1 {
+  color: #ff9a00;
+  font-size: 100px;
+  margin-top: 3rem;
+  padding-left: 13.5rem;
+  text-align: center;
+  font-family: "Creepster", cursive;
+}
+
+.stories .story {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3em;
+}
+
+.stories .story h3 {
+  font-size: 28px;
+}
+
+.stories .story h4 {
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 2rem;
+}
+
+.stories .story p {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-left: 5rem;
+  margin-right: 0; /* Adjust the margin as needed */
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+/* Style the authors section */
+.authors {
+  padding: 20px;
+  background-color: transparent;
+  text-align: center;
+  padding-top: 7rem;
+}
+
+.authors h1 {
+  color: #ff9a00;
+  font-size: 100px;
+  font-family: 'Creepster', cursive;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.authors #authors {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: center; /* Center items vertically */
+}
+
+.authors figure {
+  text-align: center; /* Center the content horizontally */
+}
+
+.authors figure img {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #ff9a00;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.authors h3 {
+  font-size: 20px;
+  color: #ff9a00;
+  margin-bottom: 10px;
+}
+
+.authors p {
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* Style the footer section */
+footer {
+  background-color: transparent;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  text-wrap: wrap;
+}
+
+footer h1 {
+  font-size: 60px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  color: #ff9a00;
+  text-wrap: wrap;
+}
+
+footer input[type="text"] {
+  padding: 10px;
+  border: 3px solid #ff9a00;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+footer input[type="submit"] {
+  background-color: #ff9a00;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-left: 2rem;
+}
+
+footer input[type="submit"]:hover {
+  background-color: white;
+  /* Change the background color on hover */
+  color: black;
+  /* Change the text color on hover */
+}
+
+/* Add some margin to the footer text */
+footer p {
+  margin-top: 20px;
+}
+
+/* Center the main content */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Additional Styles for Stories Container */
+.stories_container {
+  padding: 0 0 0 13.5rem;
+}
+
+.stories_container--row-one,
+.stories_container--row-two {
+  display: grid;
+  grid-template-columns: 30% 50%;
+  gap: 1.5rem;
+}
+
+.photo--right_position {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.story .text {
+  font-family: 'Lora', serif;
+  color: #4a4a4a;
+  line-height: 2.4rem;
+  margin-top: 3em; /* Adjust the margin as needed */
+  margin-left: 5rem; /* Adjust the left margin as needed */
+  margin-right: 5rem; /* Adjust the right margin as needed */
+}
